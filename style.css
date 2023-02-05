@@ -1,0 +1,117 @@
+html {
+    font-size: calc(65% + 0.8vmin);
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white-p: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray-bg: hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 950px) {
+    html {
+        font-size: calc(85% + 0.8vmin);
+    }
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--very-light-gray-bg);
+
+    font-family: 'Lexend Deca', sans-serif;
+    /* font-family: 'Big Shoulders Display', cursive; */
+}
+
+main {
+    display: flex;
+    max-width: 50rem;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 950px) {
+    main {
+        max-width: 20rem;
+        margin: 1rem;
+        flex-direction: column;
+    }
+}
+
+.sedan {
+    background-color: var(--bright-orange);
+    padding: 3rem;
+}
+
+.suvs {
+    background-color: var(--dark-cyan);
+    padding: 3rem;
+}
+
+.luxury {
+    background-color: var(--very-dark-cyan);
+    padding: 3rem;
+}
+
+img {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display", cursive;
+    color: var(--very-light-gray-bg);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--transparent-white-p);
+    font-size: 0.8rem;
+    margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 950px) {
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color: var(--very-light-gray-bg);
+    border: none;
+}
+
+.orange {
+    color: var(--bright-orange);
+}
+
+.orange:hover {
+    background-color: hsl(31, 42%, 30%);
+    cursor: pointer;
+    color: white;
+}
+
+.blue {
+    color: var(--dark-cyan);
+}
+
+.blue:hover {
+    background-color: hsl(183, 86%, 30%);
+    cursor: pointer;
+    color: white;
+}
+
+.green {
+    color: var(--very-dark-cyan);
+}
+
+.green:hover {
+    background-color: hsl(179, 100%, 20%);
+    cursor: pointer;
+    color: white;
+}
