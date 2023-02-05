@@ -1,2 +1,1 @@
-# FM-Three-Column-Preview
-Three Column Preview made with HTML/CSS.
+## 👋🏼 Thank you for checking out my webpage. I appreciate it! 👋🏼
